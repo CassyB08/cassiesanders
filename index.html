@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cassie Sanders' Portfolio">
+    <meta name="keywords" content="Web design, graphic design, ">
+    <meta name="author" content="Cassandra Sanders">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cassie Sanders' Portfolio</title>
+<!--Bootstrap4-->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+<!--End bootstrap 4-->
+
+<!--Header and footer JS-->
+<script src="/header.js" type="text/javascript" defer></script>
+<script src="/footer.js" type="text/javascript" defer></script>
+<!--End H&F JS-->
+
+<!--Bootstrap 3 & my stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/main-styles.css">
+    <link href="/fonts/stylesheet.css" rel="stylesheet">
+
+ <!--END Bootstrap 3 & my stylesheet-->               
+</head>
+
+<body class="wrapper">
+    <header-component></header-component>
+
+
+<section id="hero-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 center">
+               <h1 class="inner-hero"> <span class="main-title big-hero">Hello, I'm Cassie</span><br>
+                 <span class="below-title">WEB & GRAPHIC DESIGNER</span></h1>
+            </div> 
+        </div>           
+    </div>
+</section>
+
+<section id="about-me" class="padding-top-60 padding-btm-30">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-12 col-lg-4">
+                <img src="/imgs/global/self-image.png" class="img-responsive self-img">
+            </div>
+            <div class="col-12 col-lg-6 col-adjust-l padding-top-30">
+                <h2 class="animate-txt">I am a <span class="animate-me"></span></h2>
+                <p>Hey, I'm Cassandra Sanders — Cassie for short. I'm a multi-disciplinary designer with a strong foundation 
+                in front-end development and a deep understanding of how websites are built from concept to launch.</p>
+                <p>I've worked under many titles — graphic designer, web designer, webmaster, and content manager — but my 
+                approach is always the same: understand the problem, then design and build a thoughtful solution.
+                I enjoy writing clean, efficient code and continuously challenging myself to learn new techniques that push 
+                my work forward.</p>
+                <p>When I’m not designing or coding, you’ll find me trying to beat my 5K time, spending time with my family 
+                    and two cats, or enjoying a really good cup of coffee. Born and raised in St. Louis — go Cards.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="top-work" class="padding-default gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="feat-title center padding-btm-30">
+                   Featured Projects
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="project-case col-12 col-lg-4">
+                <div class="table-card">
+                    <a class="portfolio-link" href="vatrix.html" alt="Vatrix - Portfolio" target="_blank">
+                    <img src="/imgs/vatrix_thumb.jpg" alt="Vatrix Website Design" class="card-img-top responsive port-img" />
+                    <p class="card-body">
+                        <strong class="card-title">Vatrix</strong><br />
+                         <span class="project-desc">Web Design, Wordpress</span></p>
+                     </a>
+                </div>
+            </div>
+  
+            <div class="project-case col-12 col-lg-4">
+                <div class="table-card">
+                  <a class="portfolio-link" href="unigroup.html" alt="Unigroup Page - Portfolio" target="_blank">
+                  <img src="/imgs/unigroup_thumb.jpg" alt="Unigroup and National Broadband Merge" class="card-img-top responsive port-img" />
+                    <p class="card-body">
+                        <strong>Unigroup & National Broadband</strong>
+                        <br /><span class="project-desc">Web Design, Graphic Design, WordPress</span>
+                    </p>
+                  </a>
+                </div>
+            </div>
+  
+            <div class="project-case col-12 col-lg-4">
+                <div class="table-card">
+                    <a class="portfolio-link" href="lawsoneq.html" alt="Lawson Equipment Site- Portfolio" target="_blank">
+                      <img src="/imgs/lawsoneq_thumb.jpg" alt="" class="card-img-top responsive port-img" />
+                        <p class="card-body">
+                            <strong>Lawson Screen & Digital Equipment</strong>
+                            <br /><span class="project-desc">Web Design, UX, Joomla, Content Strategist</span>
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="about-cta center">
+                <a href="/portfolio.html" alt="View Cassie Sanders' Portfolio" target="_blank">
+                <button type="button" class="btn btn-primary">View All Projects</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer-component></footer-component>
+
+<style>
+
+   .big-hero{letter-spacing: 3px; font-size:50px;}
+
+
+/* Animation Starts */
+
+span.animate-me {
+    min-width: 300px;
+}
+
+.animate-me::before {
+        content: "Web Designer";
+        animation: animate infinite 10s;
+    }
+
+    @keyframes animate {
+  
+  0% {
+      content: "Graphic Designer";
+  }
+
+  50% {
+      content: "Digital Marketer";
+  }
+
+  75% {
+      content: "Problem Solver";
+  }
+}
+
+/* Animations ENDS */
+
+
+@media screen and (max-width:992px){
+    .project-case .table-card {
+    margin: 10px auto;
+    max-width:400px;}
+}
+
+@media screen and (max-width:768px){
+    .self-img{max-width:400px;margin: 0 auto;}
+    .table-card{text-align:center;}
+}
+
+@media screen and (max-width:576px){
+    span.main-title.big-hero{font-size: 35px;}
+    
+}
+
+@media screen and (max-width:400px){
+    .main-title{letter-spacing:normal;}
+    .below-title{font-size:21px;}
+    h2{font-size:23px;}
+}
+
+</style>
+
+<!-- Bootstrap 4 JS-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--End Bootstrap 4 JS-->
+</body>
+</html>
