@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Cassie Sanders' Portfolio">
+        <meta name="keywords" content="Web design, graphic design, ">
+        <meta name="author" content="Cassandra Sanders">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Cassie Sanders' Portfolio</title>
+<!--Bootstrap4-->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<!--End bootstrap 4-->
+
+<!--Header and footer JS-->
+<script src="/header.js" type="text/javascript" defer></script>
+<script src="/footer.js" type="text/javascript" defer></script>
+<!--End H&F JS-->
+
+<link rel="stylesheet" href="/main-styles.css">
+<link href="/fonts/stylesheet.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/453a385e8c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>             
+    </head>
+
+  <body>
+
+<header-component></header-component>
+
+<section id="main-content">
+    <div class="container">
+        <div class="error-img-row row">
+            <div class="col-12 col-lg-5 img-container">
+              <img src="/imgs/global/404-img.svg" class="img-responsive error-img" alt="404 Page error image" />
+            </div>
+        </div>
+        <div class="row error-txt">
+            <div class="col-12">
+                <span class="above-title">Error 404: Page Not Found</span>
+                <h1>Oops! This page doesn't exist.</h1>
+                <p>You may find what you are looking for by visiting my <a href="/">home page</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<footer-component></footer-component>
+</body>
+</html>
+<style>
+  .error-img-row{justify-content: center;padding-top:60px;}
+
+  .error-txt{  text-align:center;
+padding-bottom:60px; }
+  .above-title{font-size:28px;
+  color:gray;
+  font-weight:bold;}
+
+@media screen and (max-width:576px){
+  .above-title {font-size: 20px;}
+h1 {font-size: 32px;}
+}
+
+</style>

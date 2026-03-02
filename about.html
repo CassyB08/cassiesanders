@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cassie Sanders' Portfolio">
+    <meta name="keywords" content="Web design, graphic design, ">
+    <meta name="author" content="Cassandra Sanders">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cassie Sanders' Portfolio - About</title>
+<!--Bootstrap4-->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+<!--End bootstrap 4-->
+
+<!--Header and footer JS-->
+<script src="/header.js" type="text/javascript" defer></script>
+<script src="/footer.js" type="text/javascript" defer></script>
+<!--End H&F JS-->
+
+<!--Bootstrap 3 & my stylesheet-->
+<link rel="stylesheet" href="/main-styles.css">
+<link href="/fonts/stylesheet.css" rel="stylesheet">
+ <!--END Bootstrap 3 & my stylesheet-->               
+</head>
+
+<style>
+
+ .skill-title{text-align:center; padding-top:0;}
+
+ .skill-icon{height: 52px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;}
+
+.tech-row.row{justify-content:center;align-items:center;padding: 15px;}
+.tech-icon{width:42px;
+  display:inline;
+height:auto;
+margin:10px;}
+
+
+#about-me{padding-top:60px;}
+
+#about-me .main-title{text-align:left;}
+
+  #about-me .below-title {
+    font-size: 26px;
+}
+
+#quote{margin:60px 0; color:#fff;}
+ #quote p{ color:#fff;}
+
+button.btn.btn-primary:active {
+    background-color: #bd2130 !important;
+    border-color: #bd2130 !important;
+}
+
+
+.services .table-card{
+    padding: 30px 20px;
+    margin-right: -15px;
+    margin-left: -10px;
+    min-height: 325px;
+}
+
+.table-card {
+    border: 1px solid #efefef;
+    box-shadow: none;
+    border-radius: 5px;
+}
+.table-card:hover {
+    background-color: #f1f8ff;
+}
+
+.section-title{text-align:center; margin-bottom:30px;}
+
+ @media screen and (min-width: 992px){
+  section#about-me .row {align-items: center;}
+  .red-block{padding:60px;}
+ }
+
+ @media screen and (max-width: 992px){
+  #about-me{padding-top:30px;}
+  .hero-img{padding-top: 30px;}
+
+ }
+
+ @media screen and (max-width:401px){
+  .tech-row.row{justify-content:start; align-items:center;padding: 15px;}
+  .tech-row p{display:none;}
+  .tech-icon {
+    width: 35px;
+    margin: 0px;}
+ }
+
+
+</style>
+
+
+<body class="wrapper">
+
+  <header-component></header-component>
+
+<section class="padding-default" id="about-me">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 col-adjust-r">
+        <h1 class="main-title">About</h1>
+        <h2 class="below-title">I pioneer innovative websites and progressive digital marketing solutions.</h2>
+        <p><strong>Hey!</strong> I am Cassandra Sanders, Cassie for short. I was born and raised in St. Louis, Missouri. Go Cards!</p>
+         <p>Throughout my career, my job titles have included graphic designer, web designer, webmaster, and content
+           manager. No matter the title, my objective in every role is to understand a problem and find a creative 
+           solution. I am motivated by challenging myself to find and implement new code techniques. I oversee 
+           projects from initial concept to final launch and turn the client’s dream into a digital reality. </p>
+
+      <div class="btn primary-btn">
+        <a href="/resume/CSandersResume.pdf" alt="Cassie Sanders' Resume" target="_blank">
+          <button type="button" class="btn btn-primary">View Resume</button></a>
+      </div>
+    </div>
+            <div class="col-12 col-lg-6 hero-img">
+                <img class="img-responsive" src="/imgs/about-me-photo.jpg" alt="This is a photo of Cassie" />
+            </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-default gray-bg services">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Capabilities</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3 service-anchor">
+        <div class="table-card">
+          <img class="skill-icon" alt="Web Designer" src="/imgs/global/icons/web-design-lt.svg" />
+          <h3 class="skill-title">Web Design</h3>
+            <ul>
+              <li>Mobile Responsive Design</li>
+              <li>HTML/CSS/Bootstrap</li>
+              <li>CMS/eCommerce</li>
+              <li>UX Visual Design</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 service-anchor">
+        <div class="table-card">
+          <img class="skill-icon" alt="Grahpic Designer" src="/imgs/global/icons/graphic-design-lt.svg" />
+          <h3 class="skill-title">Graphic Design</h3>
+            <ul>
+              <li>Logo Design</li>
+              <li>Custom Graphics</li>
+              <li>Print Collateral</li>
+              <li>Photo and Video Shoot Creative Direction</li>    
+              </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 service-anchor">
+        <div class="table-card">
+          <img class="skill-icon" alt="Grahpic Designer" src="/imgs/global/icons/seo-lt.svg" />
+            <h3 class="skill-title">SEO</h3>
+            <ul>
+            <li>Keyword Research</li>
+            <li>On/Off Page SEO Building</li>
+            <li>Competitive Analysis</li>
+            <li>Analytics Reporting</li>   
+              </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 service-anchor">
+        <div class="table-card">
+          <img class="skill-icon" alt="Grahpic Designer" src="/imgs/global/icons/marketing-lt.svg">
+          <h3 class="skill-title">Marketing</h3>
+          <ul>
+            <li>Email Marketing</li>
+            <li>Display Ads</li>
+            <li>Social Media Management</li>
+            <li>Copywriting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-btm-90 padding-top-60">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="section-title center">Technical Proficiencies:</h3>
+      </div>
+    </div>
+    <div class="row tech-row">
+      <div class="col-12 col-lg-9">
+        <img src="/imgs/global/icons/programs.svg" alt="Program icons"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-me" class="red-block center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <h2 class="callout">Let's start a conversation</h2>
+        </div>
+        <div class="col-12 col-lg-5">
+        <div class="btn primary-btn">
+          <a href="/contact.html" alt="Talk to Cassie" target="_parent"><button
+              type="button" class="btn red-cta">Let's Talk!</button></a>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer-component></footer-component>
+
+<!-- Bootstrap 4 JS-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--End Bootstrap 4 JS-->
+</body>
+</html>
