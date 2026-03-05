@@ -1,3 +1,5 @@
+#hero-img{min-height:500px; background-color:pink;"
+
 /*Backgrounds */
 .gray-bg{background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(244,244,244,1) 100%);}
 
@@ -512,4 +514,5 @@ div#direct-contact {
 .padding-top-70{padding-top:70px;}
 .padding-top-80{padding-top:80px;}
 .padding-top-90{padding-top:90px;}
+
 .padding-top-100{padding-top:100px;}
