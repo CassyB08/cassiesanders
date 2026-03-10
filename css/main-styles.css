@@ -76,7 +76,7 @@ p, body {
 #hero {
   background-color:#F5EFEA;
   width:100%;
-  height:vh;
+  height:100vh;
 }
 
 
@@ -510,5 +510,6 @@ div#direct-contact {
 .padding-top-90{padding-top:90px;}
 
 .padding-top-100{padding-top:100px;}
+
 
 
