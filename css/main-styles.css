@@ -168,7 +168,7 @@ img.contact-icon {
 
   .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem #3681742e(61, 166, 180, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(61, 166, 180, 0.5);
 }
 
 .about-cta{margin-top:30px;}
@@ -510,6 +510,7 @@ div#direct-contact {
 .padding-top-90{padding-top:90px;}
 
 .padding-top-100{padding-top:100px;}
+
 
 
 
