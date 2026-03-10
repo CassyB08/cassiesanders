@@ -1,4 +1,4 @@
-#hero-img{min-height:500px; background-color:pink;"
+
 
 /*Backgrounds */
 .gray-bg{background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(244,244,244,1) 100%);}
@@ -73,14 +73,10 @@ p, body {
     z-index: 2;
 }
 
-#hero-img {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/imgs/headerimg2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  padding:30px 0;
-  align-items: center;
+#hero {
+  background-color:#F5EFEA;
+  width:100%;
+  height:vh;
 }
 
 
@@ -516,3 +512,4 @@ div#direct-contact {
 .padding-top-90{padding-top:90px;}
 
 .padding-top-100{padding-top:100px;}
+
