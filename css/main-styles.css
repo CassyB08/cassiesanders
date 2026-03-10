@@ -120,7 +120,7 @@ margin-bottom:15px;}
 
 h1.inner-hero{color:#fff; text-align:center;}
 
-#hero-img .row{justify-content: center; align-items: center;}
+#hero .row{justify-content: center; align-items: center;}
 
 #hero-banner h1{color:#1e1d1d;}
 
@@ -389,7 +389,7 @@ button {
     .col-adjust-l{padding-left:30px;}  
     .col-adjust-r{padding-right:30px;}
     #block-callout {padding: 4rem 2rem;}
-    #hero-img {padding:80px 0;}
+  
   }
 
   @media screen and (min-width:768px){
@@ -437,9 +437,7 @@ div#direct-contact {
 
 
   @media screen and (min-width:768px) and (max-width:992px){
-    #hero-img {
-      padding:60px 0;
-    }
+ 
     .col-adjust-l.padding-top-30 {
       text-align: center;
   }
@@ -512,4 +510,5 @@ div#direct-contact {
 .padding-top-90{padding-top:90px;}
 
 .padding-top-100{padding-top:100px;}
+
 
