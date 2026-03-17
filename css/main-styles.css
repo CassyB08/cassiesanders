@@ -87,6 +87,7 @@ h3, .h3 {
 
 #hero {
   background-color: #FFFBFE;
+   text-align:center;
   height: 100vh;
  display:flex;
    align-item:center;
