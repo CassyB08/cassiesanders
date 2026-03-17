@@ -43,12 +43,14 @@ p {
 ----------------------------------------------------- */
 
 h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 800;
   color: #8C1C1C;
   margin-bottom: 15px;
 }
+
+
 
 h1.red-title.main-title {
   text-align: center;
