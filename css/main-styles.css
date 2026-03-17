@@ -90,13 +90,15 @@ h3, .h3 {
    text-align:center;
   height: 100vh;
  display:flex;
-   align-item:center;
+   align-items:center;
 }
 
+/*
 #hero .row {
   justify-content: center;
   align-items: center;
 }
+*/
 
 #hero-banner h1 {
   color: #1e1d1d;
