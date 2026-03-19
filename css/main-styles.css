@@ -96,6 +96,10 @@ h3, .h3 {
    align-items:center;
 }
 
+#hero.row {
+    justify-content: center;
+}
+
 /* ---------------
    Hero line movement
 --------------- */
