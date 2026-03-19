@@ -96,7 +96,7 @@ h3, .h3 {
    align-items:center;
 }
 
-#hero.row {
+#hero .row {
     justify-content: center;
 }
 
