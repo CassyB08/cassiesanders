@@ -57,7 +57,7 @@ p {
 
 /* Section Spacing */
 .section {
-  padding: var(--space-6) 0;
+  padding: var(--space-5) 0;
 }
 
 .section-sm {
