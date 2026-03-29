@@ -86,7 +86,7 @@ p {
 .red-block,
 #red-block {
   padding: var(--space-2);
-  background-color: #8C1C1C;
+  background-color: #71241c;
 }
 
 #red-block p {
@@ -101,7 +101,7 @@ h1 {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
-  color: #8C1C1C;
+  color: #71241c;
   margin-bottom: var(--space-2);
 }
 
@@ -132,11 +132,11 @@ h3, .h3 {
 ----------------------------------------------------- */
 
 #hero {
-  background-color: #FFFBFE;
+  background-color:#eae9e1;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: var(--space-4) 0;
+  padding: var(--space-6) 0;
 }
 
 #hero .container {
@@ -181,7 +181,7 @@ header#masthead {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #8C1C1C;
+  color: #71241c;
 }
 
 /* -----------------------------------------------------
@@ -190,8 +190,8 @@ header#masthead {
 
 .btn-primary {
   color: #fff;
-  background-color: #8C1C1C;
-  border-color: #8C1C1C;
+  background-color: #71241c;
+  border-color: #71241c;
   padding: 10px;
   font-weight: 600;
   border-radius: 15px;
@@ -210,7 +210,7 @@ header#masthead {
 
 #project-highlights {
   padding: var(--space-4) 0 var(--space-7);
-  background-color: #8C1C1C;
+  background-color: #71241c;
   color: #fff;
 }
 
