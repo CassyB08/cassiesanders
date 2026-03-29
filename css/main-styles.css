@@ -3,7 +3,7 @@
 ----------------------------------------------------- */
 
 body {
-  background: #f8f9fa;
+  background: #ffffff;
   overflow-x: hidden !important;
   height: 100%;
   line-height: 1.7;
@@ -79,10 +79,6 @@ p {
    BACKGROUNDS & BLOCKS
 ----------------------------------------------------- */
 
-.gray-bg {
-  background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(244,244,244,1) 100%);
-}
-
 .red-block,
 #red-block {
   padding: var(--space-2);
@@ -139,7 +135,7 @@ h3, .h3 {
 }
 
 #hero .container{
-  background-color:#eae9e1;
+  background-color:#f8f9fa;
    padding:var(--space-6);
    border-radius:10px;
 }
@@ -311,7 +307,7 @@ a.nav-link:hover {
 ----------------------------------------------------- */
 
 footer {
-  background-color: #E5E5E5;
+
   padding: var(--space-6) 0 var(--space-3);
 }
 
