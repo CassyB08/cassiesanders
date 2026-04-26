@@ -36,6 +36,9 @@ p {
     --space-6: 48px;
     --space-7: 64px;
   }
+     .about-image {
+    margin: 0 auto;
+  }
 }
 
 /* Padding Utilities */
