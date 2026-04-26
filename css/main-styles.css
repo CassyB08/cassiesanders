@@ -321,6 +321,23 @@ About section
 padding:0 40px;
 }
 
+.about-image {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 4 / 5; /* nice portrait ratio */
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; /* keeps your face framed well */
+  display: block;
+}
+
 /* -----------------------------------------------------
    FOOTER
 ----------------------------------------------------- */
