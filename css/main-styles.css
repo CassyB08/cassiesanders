@@ -338,6 +338,22 @@ padding:0 40px;
   display: block;
 }
 
+.about-image {
+  position: relative;
+}
+
+.about-image::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #71241c;
+  border-radius: 20px;
+  z-index: -1;
+}
+
 /* -----------------------------------------------------
    FOOTER
 ----------------------------------------------------- */
