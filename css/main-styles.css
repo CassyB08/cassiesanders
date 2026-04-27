@@ -361,9 +361,9 @@ padding:0 40px;
    FOOTER
 ----------------------------------------------------- */
 
-footer {
-
+footer {  margin-top: var(--space-7);
   padding: var(--space-6) 0 var(--space-3);
+  background-color: #F5EFEA;
 }
 
 /* -----------------------------------------------------
