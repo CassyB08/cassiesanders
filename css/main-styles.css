@@ -2,6 +2,14 @@
    GLOBAL BASE STYLES
 ----------------------------------------------------- */
 
+html, body { height: 100%;}
+
+body {
+  display: flex;
+  flex-direction: column;}
+
+main {flex: 1;}
+
 body {
   background: #ffffff;
   overflow-x: hidden !important;
@@ -365,6 +373,14 @@ footer {  margin-top: var(--space-7);
   padding: var(--space-6) 0 var(--space-3);
   background-color: #F5EFEA;
          border-top: 1px solid #E7DED5;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
 }
 
 /* -----------------------------------------------------
