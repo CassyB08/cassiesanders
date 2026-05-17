@@ -28,6 +28,18 @@ p {
     margin: 0 auto;
     text-align: center;}
 
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#logo .logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px; /* optional, depending on your favicon shape */}
+
+
 /* -----------------------------------------------------
    SPACING SYSTEM (NEW)
 ----------------------------------------------------- */
