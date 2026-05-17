@@ -8,7 +8,6 @@ class HeaderComponent extends HTMLElement {
             <ul class="navbar-menu">
               <li><a class="nav-link" href="#top-work">Work</a></li>
               <li><a class="nav-link" href="#about-me">About</a></li>
-              <li><a class="nav-link" href="/portfolio.html" target="_blank">Portfolio</a></li>
             </ul>
           </nav>
         </div>
