@@ -396,3 +396,27 @@ footer {  margin-top: var(--space-7);
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width:992px){
+    .project-case .table-card {
+    margin: 10px auto;
+    max-width:400px;}
+}
+
+@media screen and (max-width:768px){
+    .self-img{max-width:400px;margin: 0 auto;}
+    .table-card{text-align:center;}
+}
+
+@media screen and (max-width:576px){
+    span.main-title.big-hero{font-size: 35px;}
+    
+}
+
+@media screen and (max-width:400px){
+    .main-title{letter-spacing:normal;}
+    .below-title{font-size:21px;}
+    h2{font-size:23px;}
+}
+
+
