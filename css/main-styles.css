@@ -234,15 +234,26 @@ header#masthead {
   z-index: 10;
   padding: var(--space-1) 0;
   background-color: transparent;
-  transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease, color 0.35s ease;
   backdrop-filter: blur(0px);
 }
 
-/* When scrolled */
+/* When scrolled: bold brand color */
 header#masthead.scrolled {
-  background-color: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  backdrop-filter: blur(6px);}
+  background-color: rgba(113, 36, 28, 0.95); /* your brand red */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  backdrop-filter: blur(4px);
+}
+
+/* Make nav links white when scrolled */
+header#masthead.scrolled a.nav-link,
+header#masthead.scrolled #logo span {
+  color: #ffffff !important;}
+
+/* Make favicon pop on dark background */
+header#masthead.scrolled .logo-icon {
+  filter: brightness(1.2);}
+
 
 
 
