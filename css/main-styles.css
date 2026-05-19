@@ -4,7 +4,7 @@
 
 html, body { height: 100%; }
 
-body {
+body {display:inline-block;
   flex-direction: column;
   background: #ffffff;
   overflow-x: hidden !important;
