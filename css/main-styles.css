@@ -228,13 +228,19 @@ h3, .h3 {
 ----------------------------------------------------- */
 
 header#masthead {
-  background-color: #ffffff;
-  padding: var(--space-1) 0;
-  /* box-shadow: 0 0 10px #d2d2d2;*/
   position: sticky;
   top: 0;
-  z-index: 2;
-}
+  z-index: 10;
+  padding: var(--space-1) 0;
+  background-color: transparent;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+  backdrop-filter: blur(0px);}
+
+/* When scrolled */
+header#masthead.scrolled {
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  backdrop-filter: blur(6px);}
 
 #logo {
   text-transform: uppercase;
