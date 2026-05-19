@@ -227,20 +227,23 @@ h3, .h3 {
    NAVIGATION
 ----------------------------------------------------- */
 
+/* Default: transparent sticky nav */
 header#masthead {
   position: sticky;
   top: 0;
   z-index: 10;
   padding: var(--space-1) 0;
   background-color: transparent;
-  transition: background-color 0.35s ease, box-shadow 0.35s ease;
-  backdrop-filter: blur(0px);}
+  transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
+  backdrop-filter: blur(0px);
+}
 
 /* When scrolled */
 header#masthead.scrolled {
   background-color: rgba(255, 255, 255, 0.92);
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   backdrop-filter: blur(6px);}
+
 
 
 #logo {
