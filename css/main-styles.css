@@ -253,6 +253,17 @@ header#masthead.scrolled #logo span {
 header#masthead.scrolled .logo-icon {
   filter: brightness(1.2);}
 
+/* Slide-down animation */
+@keyframes navSlideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 
 
