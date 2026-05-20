@@ -370,3 +370,9 @@ footer {
   .below-title { font-size: 21px; }
   h2 { font-size: 23px; }
 }
+
+/* Fix mobile menu positioning */
+.main-nav {
+  position: relative;
+}
+
