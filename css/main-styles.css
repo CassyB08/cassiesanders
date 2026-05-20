@@ -385,3 +385,28 @@ footer {
   .below-title { font-size: 21px; }
   h2 { font-size: 23px; }
 }
+
+
+/* ===== FORCE STICKY NAV TO WORK ===== */
+
+/* 1. Ensure <main> is NOT flex */
+main {
+  display: block !important;
+  flex-direction: unset !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+}
+
+/* 2. Ensure no parent blocks sticky */
+body, html, .wrapper {
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}
+
+/* 3. Ensure header is allowed to stick */
+header#masthead {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+}
+
