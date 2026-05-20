@@ -1,5 +1,7 @@
 class HeaderComponent extends HTMLElement {
   connectedCallback() {
+    this.style.display = "contents"; // <-- CRITICAL FIX
+
     this.innerHTML = `
       <header id="masthead">
         <div class="container">
