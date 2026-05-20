@@ -4,11 +4,11 @@
 
 html, body { height: 100%; }
 
-body {display:inline-block;
+body {
+  display: flex;
   flex-direction: column;
   background: #ffffff;
-  overflow-x: hidden !important;
-  height: 100%;
+  overflow-x: hidden;
   line-height: 1.7;
   font-family: 'PT Sans', sans-serif;
   color: #1e1d1d;
@@ -20,7 +20,7 @@ main {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  display: block; /* CRITICAL: allows sticky nav to work */
+  display: block;
 }
 
 p { line-height: 1.7; }
@@ -36,7 +36,6 @@ p { line-height: 1.7; }
   align-items: center;
   gap: 8px;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: #71241c;
@@ -105,7 +104,6 @@ p { line-height: 1.7; }
 ----------------------------------------------------- */
 
 h1 {
-  font-family: 'PT Sans', sans-serif;
   font-size: 2rem;
   font-weight: 800;
   color: #71241c;
@@ -113,14 +111,12 @@ h1 {
 }
 
 .before-h1 {
-  font-family: "PT Sans", sans-serif;
   font-weight: 500;
   font-variant: small-caps;
   font-size: 1.25rem;
 }
 
 h2 {
-  font-family: 'PT Sans', sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   color: #1e1d1d;
@@ -170,7 +166,6 @@ h3, .h3 {
 .marquee {
   font-size: 1.5rem !important;
   font-weight: 500;
-  margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -190,60 +185,53 @@ h3, .h3 {
    NAVIGATION (STICKY + BRAND COLOR + SLIDE DOWN)
 ----------------------------------------------------- */
 
-/* Slide-down animation */
 @keyframes navSlideDown {
   0% { transform: translateY(-100%); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
 
-/* Default transparent sticky nav */
 header#masthead {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   padding: var(--space-1) 0;
   background-color: transparent;
-  transition: background-color 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease, color 0.35s ease;
-  backdrop-filter: blur(0px);
+  transition: background-color .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
 }
 
-/* Scrolled state */
 header#masthead.scrolled {
   background-color: rgba(113, 36, 28, 0.95);
   box-shadow: 0 2px 10px rgba(0,0,0,0.15);
   backdrop-filter: blur(4px);
-  animation: navSlideDown 0.35s ease forwards;
+  animation: navSlideDown .35s ease forwards;
 }
 
-/* White nav links on scroll */
 header#masthead.scrolled a.nav-link,
 header#masthead.scrolled #logo span {
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
-/* Brighten favicon on dark background */
 header#masthead.scrolled .logo-icon {
   filter: brightness(1.2);
 }
 
 .main-nav {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 500;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
 }
 
 .navbar-menu {
   list-style: none;
   display: flex;
+  gap: 8px;
   margin: 0;
   padding: 0;
 }
 
 .navbar-menu li a,
 a.nav-link {
-  display: block;
   padding: 14px 16px;
   text-decoration: none;
   color: #1e1d1d;
@@ -302,7 +290,6 @@ a.nav-link:hover {
 
 .about-visual {
   width: 100%;
-  height: auto;
   border-radius: 30px;
   padding: 0 40px;
 }
@@ -322,7 +309,6 @@ a.nav-link:hover {
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  display: block;
 }
 
 .about-image::after {
@@ -364,49 +350,23 @@ footer {
   #hero h1 { font-size: 2rem; }
 }
 
-@media screen and (max-width:992px){
+@media (max-width: 992px) {
   .project-case .table-card {
     margin: 10px auto;
     max-width: 400px;
   }
 }
 
-@media screen and (max-width:768px){
-  .self-img { max-width: 400px; margin: 0 auto; }
+@media (max-width: 768px) {
   .table-card { text-align: center; }
 }
 
-@media screen and (max-width:576px){
+@media (max-width: 576px) {
   span.main-title.big-hero { font-size: 35px; }
 }
 
-@media screen and (max-width:400px){
+@media (max-width: 400px) {
   .main-title { letter-spacing: normal; }
   .below-title { font-size: 21px; }
   h2 { font-size: 23px; }
 }
-
-
-/* ===== FORCE STICKY NAV TO WORK ===== */
-
-/* 1. Ensure <main> is NOT flex */
-main {
-  display: block !important;
-  flex-direction: unset !important;
-  align-items: unset !important;
-  justify-content: unset !important;
-}
-
-/* 2. Ensure no parent blocks sticky */
-body, html, .wrapper {
-  overflow-y: visible !important;
-  overflow-x: hidden !important;
-}
-
-/* 3. Ensure header is allowed to stick */
-header#masthead {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 9999 !important;
-}
-
