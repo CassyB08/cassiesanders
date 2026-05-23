@@ -181,6 +181,7 @@ h3, .h3 {
   100% { transform: translate(-100%, 0); }
 }
 
+
 /* -----------------------------------------------------
    NAVIGATION (STICKY + BRAND COLOR + SLIDE DOWN)
 ----------------------------------------------------- */
@@ -195,7 +196,7 @@ header#masthead {
   top: 0;
   z-index: 1000;
   padding: var(--space-1) 0;
-  background-color: transparent;
+  background-color: #ffffff; /* Fallback for readable text */
   transition: background-color .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
 }
 
@@ -215,23 +216,71 @@ header#masthead.scrolled .logo-icon {
   filter: brightness(1.2);
 }
 
+header#masthead.scrolled .nav-toggle span {
+  background-color: #fff; /* White hamburger when scrolled */
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  position: relative;
 }
 
+/* Hamburger Toggle Button Styling */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+}
+
+.nav-toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: #1e1d1d;
+  transition: all 0.3s ease;
+}
+
+/* Optional: Hamburger morphs to an "X" when open */
+.nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+/* Mobile Menu Dropdown View (Default) */
 .navbar-menu {
   list-style: none;
-  display: flex;
-  gap: 8px;
+  display: none; /* Hidden on mobile by default */
+  flex-direction: column;
+  gap: 0;
   margin: 0;
-  padding: 0;
+  padding: var(--space-2) 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: inherit; /* Matches active header background color */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.navbar-menu.open {
+  display: flex; /* Display vertically on click */
+}
+
+.navbar-menu li {
+  width: 100%;
 }
 
 .navbar-menu li a,
 a.nav-link {
+  display: block;
   padding: 14px 16px;
   text-decoration: none;
   color: #1e1d1d;
@@ -242,14 +291,20 @@ a.nav-link:hover {
   color: #8C1C1C;
 }
 
-/* Base mobile styles */
-.navbar-menu {
-  display: none; /* Hide by default on mobile */
-}
+/* Desktop Styles Breakpoint */
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none; /* Hide hamburger icon on big screens */
+  }
 
-/* Class added by your JavaScript */
-.navbar-menu.open {
-  display: block; /* Show when open */
+  .navbar-menu {
+    display: flex; /* Keep layout visible always on desktop */
+    flex-direction: row;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
 }
 
 /* -----------------------------------------------------
