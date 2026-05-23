@@ -407,23 +407,49 @@ footer {
   flex-wrap: wrap;
 }
 
-/* -----------------------------------------------------
-   RESPONSIVE
------------------------------------------------------ */
 
+/* =====================================================
+   RESPONSIVE LAYOUTS & BREAKPOINTS
+===================================================== */
+
+/* MOBILE ONLY STYLES (Max-width: 768px) */
 @media (max-width: 768px) {
-  #hero h1 { font-size: 2rem; }
+  #hero h1 { 
+    font-size: 2rem; 
+  }
+  
+  .table-card { 
+    text-align: center; 
+  }
 }
 
+/* DESKTOP ONLY STYLES (Min-width: 769px) */
+@media (min-width: 769px) {
+  /* Enforce hiding the hamburger menu on desktop viewports */
+  .nav-toggle, 
+  header-component .nav-toggle {
+    display: none !important; 
+  }
+
+  /* Reset the menu back to horizontal layout on desktop viewports */
+  .navbar-menu,
+  header-component .navbar-menu {
+    display: flex !important; 
+    flex-direction: row;
+    position: static;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+/* EXTRA UTILITY MEDIA QUERIES */
 @media (max-width: 992px) {
   .project-case .table-card {
     margin: 10px auto;
     max-width: 400px;
   }
-}
-
-@media (max-width: 768px) {
-  .table-card { text-align: center; }
 }
 
 @media (max-width: 576px) {
@@ -435,9 +461,3 @@ footer {
   .below-title { font-size: 21px; }
   h2 { font-size: 23px; }
 }
-
-/* Fix mobile menu positioning */
-.main-nav {
-  position: relative;
-}
-
