@@ -266,9 +266,11 @@ header#masthead.scrolled .nav-toggle span {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: inherit; /* Matches active header background color */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
+  
+  /* The fixes for layered visibility */
+  background-color: #ffffff; /* Forces a crisp solid white background */
+  z-index: 1001;            /* Places it layer-wise in front of header text */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Adds depth over underlying text */}
 
 .navbar-menu.open {
   display: flex; /* Display vertically on click */
