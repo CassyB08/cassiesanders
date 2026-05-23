@@ -242,6 +242,16 @@ a.nav-link:hover {
   color: #8C1C1C;
 }
 
+/* Base mobile styles */
+.navbar-menu {
+  display: none; /* Hide by default on mobile */
+}
+
+/* Class added by your JavaScript */
+.navbar-menu.open {
+  display: block; /* Show when open */
+}
+
 /* -----------------------------------------------------
    BUTTONS
 ----------------------------------------------------- */
