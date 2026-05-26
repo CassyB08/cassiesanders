@@ -196,7 +196,7 @@ header#masthead {
   top: 0;
   z-index: 1000;
   padding: var(--space-1) 0;
-  background-color: #ffffff; /* Fallback for readable text */
+  background-color: transparent;
   transition: background-color .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
 }
 
