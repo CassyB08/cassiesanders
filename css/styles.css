@@ -1,15 +1,18 @@
 /* -----------------------------------------------------
    HOMEPAGE HEADER (NEW HERO)
 ----------------------------------------------------- */
-
 .home-hero {
+  width: 100%;
+  padding: var(--space-7) 0;
+  background: radial-gradient(circle at center, #f7f7f7 0%, #e4e4e4 100%);
+}
+
+.home-hero .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-7) 0;
-  position: relative;
-  background: radial-gradient(circle at center, #f7f7f7 0%, #e4e4e4 100%);
 }
+
 
 /* Left Side Text */
 .home-hero-left {
