@@ -43,12 +43,9 @@ a span.brand-name {
   color: var(--text);
 }
 
-
-
   /* Full Images */
   .full-image {
     width: 100%;
     border-radius: var(--radius);
     margin-bottom: 40px;
-    border: 1px solid var(--border);
   }
