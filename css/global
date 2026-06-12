@@ -16,6 +16,14 @@ header.global-header {
   color: var(--text);
 }
 
+
+
+.brand-logo .full-image {
+    display: block;
+    width: 100%;
+    max-width: 40px;
+}
+
 /* Circle logo container */
 .brand-logo {
   width: 40px;
