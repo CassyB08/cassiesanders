@@ -1,6 +1,11 @@
 /* ============================
    GLOBAL HEADER (Bootstrap 4)
    ============================ */
+img.full-image {
+    display: block;
+    width: 100%;
+    max-width: 40px;
+}
 
 header.global-header {
   background: var(--bg);
@@ -51,9 +56,4 @@ a span.brand-name {
   color: var(--text);
 }
 
-  /* Full Images */
-  .full-image {
-    width: 100%;
-    border-radius: var(--radius);
-    margin-bottom: 40px;
-  }
+
