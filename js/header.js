@@ -12,6 +12,7 @@ class HeaderComponent extends HTMLElement {
             <span class="brand-name">Cassie Sanders</span>
           </a>
         </div>
+        <hr>
       </header>
     `;
   }
