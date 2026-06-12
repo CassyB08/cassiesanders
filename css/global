@@ -37,11 +37,12 @@ header.global-header {
 }
 
 /* Name text */
-.brand-name {
+a span.brand-name {
   font-size: 18px;
   font-weight: 600;
   color: var(--text);
 }
+
 
 
   /* Full Images */
