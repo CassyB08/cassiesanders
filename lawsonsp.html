@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
-        <meta name="description" content="Cassie Sanders' Portfolio">
-        <meta name="keywords" content="Web design, graphic design, ">
-        <meta name="author" content="Cassandra Sanders">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lawson Case Study · Cassie Sanders</title>
+ <meta name="description" content="Cassie Sanders' Portfolio">
+ <meta name="keywords" content="Web design, graphic design">
+ <meta name="author" content="Cassandra Sanders">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Bootstrap4-->
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<!--End bootstrap 4-->
+ <title>Lawson Case Study · Cassie Sanders</title>
 
-<!--Header and footer JS-->
-<script src="/header.js" type="text/javascript" defer></script>
-<script src="/footer.js" type="text/javascript" defer></script>
-<!--End H&F JS-->
+ <!-- Bootstrap 4 CSS -->
+ <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-<style>
+ <!-- Header & Footer Components -->
+ <script src="/header.js" defer></script>
+ <script src="/footer.js" defer></script>
+
+ <style>
   :root {
     --text: #1a1a1a;
     --subtle: #555;
@@ -34,42 +33,21 @@
     color: var(--text);
     background: #fff;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
-  header {
-    border-bottom: 1px solid var(--border);
-    padding-left:20px;
+  footer {
+    margin-top: auto;
+    background: var(--footer-bg);
+    color: var(--footer-text);
   }
 
-.hero-row > div {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-footer {
-  margin-top: auto;
-}
-
-
-@media (min-width: 992px) {
-  .hero-row > div:first-child {
-    padding-right: 40px;
+  .full-image {
+    width: 100%;
+    border-radius: var(--radius);
   }
-
-  .hero-row > div:last-child {
-    padding-left: 40px;
-  }
-}
-
 
   .brand-logo {
     width: 40px;
@@ -82,31 +60,20 @@ footer {
     justify-content: center;
     font-weight: 700;
   }
-
-  .full-image {
-    width: 100%;
-    border-radius: var(--radius);
-  }
-
-  footer {
-    background: var(--footer-bg);
-    color: var(--footer-text);
-  }
-</style>
+ </style>
 </head>
 
 <body>
 
+<header-component></header-component>
 
-      <header-component></header-component>
-
-<!-- HERO 2-COLUMN -->
+<!-- HERO SECTION -->
 <section class="container py-5">
   <div class="row align-items-center">
 
     <!-- Text Left -->
-    <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
-      <h1 class="display-5 fw-bold">Lawson Screen & Digital Products</h1>
+    <div class="col-lg-6 mb-4 mb-lg-0 pr-lg-5">
+      <h1 class="font-weight-bold" style="font-size: 2.5rem;">Lawson Screen & Digital Products</h1>
       <p class="lead text-muted">
         A complete ecommerce and UX modernization for a national screen‑printing supplier,
         focused on clarity, product discoverability, and conversion performance.
@@ -114,15 +81,16 @@ footer {
     </div>
 
     <!-- Image Right -->
-    <div class="col-lg-6 ps-lg-5">
+    <div class="col-lg-6 pl-lg-5">
       <img src="lawson-cover-homepage-hero.jpg" class="img-fluid rounded" alt="Lawson cover image">
     </div>
 
   </div>
 </section>
-<!-- Challenge -->
+
+<!-- CHALLENGE -->
 <section class="container py-5">
-  <h2 class="fw-bold mb-3">The Challenge</h2>
+  <h2 class="font-weight-bold mb-3">The Challenge</h2>
   <p class="text-muted">
     Lawson’s website served thousands of customers but struggled with outdated layouts,
     inconsistent product pages, and a complex navigation system. The goal was to modernize
@@ -130,9 +98,9 @@ footer {
   </p>
 </section>
 
-<!-- What I Did -->
+<!-- WHAT I DID -->
 <section class="container py-5">
-  <h2 class="fw-bold mb-3">What I Did</h2>
+  <h2 class="font-weight-bold mb-3">What I Did</h2>
   <ul class="text-muted">
     <li>Redesigned product pages for clarity and conversion</li>
     <li>Improved navigation and information hierarchy</li>
@@ -142,9 +110,9 @@ footer {
   </ul>
 </section>
 
-<!-- Results -->
+<!-- RESULTS -->
 <section class="container py-5">
-  <h2 class="fw-bold mb-3">Results</h2>
+  <h2 class="font-weight-bold mb-3">Results</h2>
   <ul class="text-muted">
     <li>+22% increase in page sessions</li>
     <li>+23% increase in conversion rate</li>
@@ -153,7 +121,7 @@ footer {
   </ul>
 </section>
 
-<!-- Images -->
+<!-- IMAGES -->
 <section class="container py-5">
   <img src="lawson-shopping-cart.jpg" class="full-image mb-4" alt="Shopping cart">
   <img src="lawson-support-zippy.jpg" class="full-image mb-4" alt="Support page">
@@ -162,14 +130,10 @@ footer {
 
 <footer-component></footer-component>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  fetch("/header.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("global-header").innerHTML = html;
-    });
-</script>
+<!-- Bootstrap 4 JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
