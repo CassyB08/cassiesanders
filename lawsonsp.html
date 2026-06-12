@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
         <meta name="description" content="Cassie Sanders' Portfolio">
         <meta name="keywords" content="Web design, graphic design, ">
         <meta name="author" content="Cassandra Sanders">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>Cassie Sanders' Portfolio</title>
+<title>Lawson Case Study · Cassie Sanders</title>
+
 <!--Bootstrap4-->
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <!--End bootstrap 4-->
@@ -17,201 +17,159 @@
 <script src="/footer.js" type="text/javascript" defer></script>
 <!--End H&F JS-->
 
-       
-        <link rel="stylesheet" href="/css/bootstrap.css" >
-        <link rel="stylesheet" href="/main-styles.css">
-        <link href="/fonts/stylesheet.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/453a385e8c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>             
-    </head>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --subtle: #555;
+    --accent: #7a3b2f;
+    --border: #e5e5e5;
+    --footer-bg: #000;
+    --footer-text: #fff;
+    --radius: 12px;
+    --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
 
-    <body class="wrapper">
-   
+  body {
+    font-family: var(--font);
+    color: var(--text);
+    background: #fff;
+    line-height: 1.6;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-left:20px;
+  }
+
+.hero-row > div {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+
+@media (min-width: 992px) {
+  .hero-row > div:first-child {
+    padding-right: 40px;
+  }
+
+  .hero-row > div:last-child {
+    padding-left: 40px;
+  }
+}
+
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
+  .full-image {
+    width: 100%;
+    border-radius: var(--radius);
+  }
+
+  footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+  }
+</style>
+</head>
+
+<body>
+
+
       <header-component></header-component>
 
-<section id="project-hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-5 phero-txt company-overview">
-                <h1 class="main-title"><span class="small-main">Lawson Screen & Digital Products</span></h1>
-                <p class="below-title">Ecommerce Design</p>
-                <p>Lawson Screen and Digital Products is a local St. Louis B2B company that manufactures screen
-                     printing equipment and garment printing supplies. They also distribute well-known brand 
-                     products for garment printing all over the United States. </p>
-            </div>
-            <div class="col-12 col-lg-7 responsive-mockup">
-                <img class="img-responsive" src="/imgs/lawsonsp supplies/lawsonecom_hero.jpg" alt="Lawson Screen and Digital Ecommerce design"/>
-            </div>
-        </div>
+<!-- HERO 2-COLUMN -->
+<section class="container py-5">
+  <div class="row align-items-center">
+
+    <!-- Text Left -->
+    <div class="col-lg-6 mb-4 mb-lg-0 pe-lg-5">
+      <h1 class="display-5 fw-bold">Lawson Screen & Digital Products</h1>
+      <p class="lead text-muted">
+        A complete ecommerce and UX modernization for a national screen‑printing supplier,
+        focused on clarity, product discoverability, and conversion performance.
+      </p>
     </div>
+
+    <!-- Image Right -->
+    <div class="col-lg-6 ps-lg-5">
+      <img src="lawson-cover-homepage-hero.jpg" class="img-fluid rounded" alt="Lawson cover image">
+    </div>
+
+  </div>
+</section>
+<!-- Challenge -->
+<section class="container py-5">
+  <h2 class="fw-bold mb-3">The Challenge</h2>
+  <p class="text-muted">
+    Lawson’s website served thousands of customers but struggled with outdated layouts,
+    inconsistent product pages, and a complex navigation system. The goal was to modernize
+    the experience without disrupting long‑standing customer habits.
+  </p>
 </section>
 
-
-<section id="half-col-img" class="padding-default">
-    <div class="container">
-        <div class="row">
-            <div class="mobile-imgs col-12 col-lg-6">
-                <img class="img-responsive" src="/imgs/lawsonsp supplies/lawsonsp_computer.jpg" alt="Lawson Ecommerce on Desktop" />
-            </div>
-            <div class="mobile-imgs col-12 col-lg-6">
-                <img class="img-responsive" src="/imgs/lawsonsp supplies/lawsonsp_laptop2.jpg" alt="vatrix medium screen design" />
-            </div>
-        </div>
-    </div>
+<!-- What I Did -->
+<section class="container py-5">
+  <h2 class="fw-bold mb-3">What I Did</h2>
+  <ul class="text-muted">
+    <li>Redesigned product pages for clarity and conversion</li>
+    <li>Improved navigation and information hierarchy</li>
+    <li>Modernized category layouts and product groupings</li>
+    <li>Enhanced support and documentation UX</li>
+    <li>Created a consistent visual system across high‑volume pages</li>
+  </ul>
 </section>
 
-
-<section class="padding-default">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 summary-img">
-               
-                <img class="img-responsive" src="/imgs/lawsonsp supplies/supplies_jobsummary_img.jpg" alt="Lawson Screen and Digital Equipment site summary" />
-                
-            </div>
-            <div class="col-12 col-lg-6 summary-txt">
-                <h2>Ecommerce Design</h2>
-                <p>Lawson Screen and Digital Products eCommerce website's first edition from some years back served
-                     the organization well, but it was time for a more modern look and enhanced features. I 
-                     installed the new edition on a Shopify eCommerce platform assembled with a fully responsive 
-                     theme. New features included robust pages with more insightful video integration, an intuitive
-                      search bar, a comprehensive menu structure, and a checkout process that accepted payments. 
-                      SEO tactics, such as adding alt tags and title tags, were implemented for better organic 
-                      search results. 
-                   </p>
-                
-                    <h3>Project Scope</h3>
-                    <ul>
-
-                        <li>Responsive Ecommerce Design</li>
-<li>SEO Optimization</li>
- <li> Complete Sales Funnel</li>
- <li>Enhanced User Experience</li>
-<li>Professional Website Copywriting</li>
-<li>Photoshoot Creative Direction</li>
-<li>Google Adwords Management & Digital Marketing</li>
-
-                    </ul>
-            </div>
-        </div>
-    </div>
+<!-- Results -->
+<section class="container py-5">
+  <h2 class="fw-bold mb-3">Results</h2>
+  <ul class="text-muted">
+    <li>+22% increase in page sessions</li>
+    <li>+23% increase in conversion rate</li>
+    <li>Improved product discoverability and user flow</li>
+    <li>More cohesive brand experience across all digital touchpoints</li>
+  </ul>
 </section>
 
-<section id="results-section" class="padding-top-40 padding-btm-60">
-    <div class="container results-container gray-bg">
-        <div class="row">
-            <div class="col-12">
-                <h2>Results</h2>
-                <p>Immediately after launch of the new ecommerce website, Lawson's audience page sessions increased
-                     by 22%, and the conversion rate increased by 23%. Paired with an on-staff graphic designer, we
-                      maintained a steady increase in traffic and current customer loyalty with an aesthetically pleasing
-                       application through HTML and graphics. 
-              </p>
-            </div>
-        </div>
-    </div>
+<!-- Images -->
+<section class="container py-5">
+  <img src="lawson-shopping-cart.jpg" class="full-image mb-4" alt="Shopping cart">
+  <img src="lawson-support-zippy.jpg" class="full-image mb-4" alt="Support page">
+  <img src="lawson-product-hdmax.jpg" class="full-image" alt="HD-MAX product page">
 </section>
-
-<section id="lawson-cares" class="padding-top-60 padding-btm-90">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 company-overview">
-                <h2>Lawson Customer Care</h2>
-                <p>Lawson Screen and Digital emphasize their extra customer care by assisting customers 24/7/365. 
-                    Features I added to achieve this expectation:
-                    <ul>
-                        <li>New Customer Portal</li>
-                        <li>Automated transaction and sales marketing emails</li>
-                        <li>New built-in live chat and text messaging support systems</li>
-                        <li>Product review sections added</li>
-                    </ul>
-                 </p>
-            </div>
-            <div class="col-12 col-lg-6 summary-img">
-                <img class="img-responsive" src="/imgs/marketing/marketing-summary.jpg" alt="Lawson Screen and Digital Supplies Email Marketing">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="project-highlights">
-    <div class="container center">
-        <div class="row">
-            <div class="col-12 ">
-                    <h2>Project Features</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="gallery-img col-12 col-lg-4">
-                <a data-fancybox="gallery"
-  data-src="/imgs/lawsonsp supplies/gallery/category_pg.jpg" data-caption="Updated product images and category images"/> 
-   <img class="img-responsive" src="/imgs/lawsonsp supplies/gallery/category_pg_thumb.jpg" />
-</a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/lawsonsp supplies/gallery/product_pg.jpg"" data-caption="Insightful product pages with a video section, a customer review section, and a related product section."/> 
-                 <img class="img-responsive" src="/imgs/lawsonsp supplies/gallery/product_pg_thumb.jpg" />
-              </a>
-         
-           </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/lawsonsp supplies/gallery/product_pg2.jpg" data-caption="Products once only available over the phone became able to be purchased online"/> 
-                 <img class="img-responsive" src="/imgs/lawsonsp supplies/gallery/product_pg2_thumb.jpg" />
-              </a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/lawsonsp supplies/gallery/estore_searchbar.jpg" data-caption="Intuitive search bar"/> 
-                 <img class="img-responsive" src="/imgs/lawsonsp supplies/gallery/estore_searchbar_thumb.jpg" />
-              </a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/lawsonsp supplies/gallery/customized_cart.jpg" data-caption="Checkout process with customized questions to complete order transactions"/> 
-                 <img class="img-responsive" src="/imgs/lawsonsp supplies/gallery/customized_cart_thumb.jpg" />
-              </a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/lawsonsp supplies/gallery/customerportal.jpg" data-caption="Authentic service section to provide in depth assistance to valued customers"/> 
-                 <img class="img-responsive" src="/imgs/lawsonsp supplies/gallery/customerportal_thumb.jpg" />
-              </a>
-            </div>
-
-        </div>
-    
-    </div>
-</section>
-
 
 <footer-component></footer-component>
 
-  <style>
-#lawson-cares .row {align-items: center;}
-
-.small-main{font-size: 43px;}
-
-  </style> 
-  
-  
- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
- <script>
-   //  JavaScript will go here
- </script>
-<!-- Bootstrap 4 JS-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--End Bootstrap 4 JS-->
-
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  fetch("/header.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("global-header").innerHTML = html;
+    });
+</script>
 </body>
 </html>
