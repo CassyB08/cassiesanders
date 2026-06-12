@@ -1,3 +1,11 @@
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--border);
+  }
 
   .global-header {
   border-bottom: 1px solid var(--border);
