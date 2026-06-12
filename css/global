@@ -2,10 +2,10 @@
    GLOBAL HEADER (Bootstrap 4)
    ============================ */
 
-.global-header {
+header.global-header {
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  padding: 24px 32px; /* matches index.html */
+  padding: 24px 32px;
 }
 
 /* Brand container */
