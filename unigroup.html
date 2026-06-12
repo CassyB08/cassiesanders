@@ -1,251 +1,221 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Cassie Sanders' Portfolio">
-        <meta name="keywords" content="Web design, graphic design, ">
-        <meta name="author" content="Cassandra Sanders">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>Cassie Sanders' Portfolio</title>
-       
-        <!--Bootstrap4-->
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <!--End bootstrap 4-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Cassie Sanders' Portfolio">
+<meta name="keywords" content="Web design, graphic design">
+<meta name="author" content="Cassandra Sanders">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--Header and footer JS-->
-<script src="/header.js" type="text/javascript" defer></script>
-<script src="/footer.js" type="text/javascript" defer></script>
-<!--End H&F JS-->
+<title>Unigroup Case Study · Cassie Sanders</title>
 
-<link rel="stylesheet" href="/main-styles.css">
-<link href="/fonts/stylesheet.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/453a385e8c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>             
-    </head>
-
-    <body class="wrapper">
-      <header-component></header-component>
+<!-- Bootstrap 4 CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/global.css">
 
 
-<section id="project-hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-5 phero-txt company-overview">
-                <h1 class="main-title small-main">Unigroup Inc & National Broadband</h1>
-                <p class="below-title">Page Design</p>
-                <p>United Van Lines and Mayflower are worldwide moving and relocating service providers. 
-                    To bring more value to their customer base, they have teamed up with National Broadband to
-                     provide internet and television consultations as an after-move service.</p>
-          
-            </div>
-            <div class="col-12 col-lg-7 responsive-mockup">
-                <img class="img-responsive" src="/imgs/unigroup/unigroup_hero.jpg" alt="United Van Line's Deidcated Internet Consultation Offering Page"/>
-            </div>
+<style>
+
+  a span.brand-name {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+} 
+  :root {
+    --text: #1a1a1a;
+    --subtle: #555;
+    --accent: #7a3b2f;
+    --bg: #ffffff;
+    --card-bg: #f7f7f7;
+    --border: #e5e5e5;
+    --footer-bg: #000000;
+    --footer-text: #ffffff;
+    --radius: 12px;
+    --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* Page Wrapper */
+  .case-wrapper {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  /* Hero */
+  .case-hero {
+    text-align: left;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px double var(--accent);
+  }
+
+  .case-hero h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+
+  .case-hero p {
+    font-size: 1.25rem;
+    color: var(--subtle);
+  }
+
+  /* Footer */
+  footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 14px;
+  }
+
+      /* Full Images */
+  .full-image {
+    display:block;
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 40px;
+  }
+</style>
+  <!-- Header & Footer Components -->
+<script src="js/header.js" defer></script>
+<script src="js/footer.js" defer></script>
+</head>
+
+<body>
+
+<header-component></header-component>
+
+<div class="case-wrapper">
+
+  <!-- HERO -->
+  <section class="case-hero">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+    <h1> Unigroup × National Broadband</h1>
+    <p>
+  A co‑branded landing page system built for two of the nation’s most recognized relocation brands — United Van Lines and Mayflower — in partnership with National Broadband. Designed and developed in WordPress, these pages serve as a seamless post‑move touchpoint, guiding customers toward internet and TV setup during or after their relocation. </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="case-cover">
+          <img class="full-image" src="images/unigroup_hero.jpg" alt="unigroup-cover-img" />
         </div>
+      </div>
+  </section>
+
+  <!-- CHALLENGE -->
+  <section class="mb-5">
+    <h2 class="section-title">The Challenge</h2>
+    <p class="text-muted">
+<strong>Designing for Two Distinct Brands Under One Parent Company</strong><br>
+Unigroup owns both United Van Lines and Mayflower, each with its own brand identity, color palette, typography, and tone. 
+National Broadband partnered with both brands to offer internet and TV consultation services to customers after a move.
+The challenge was to create two separate landing pages that:</p>
+<ul class="text-muted">
+    <li>Felt authentic to each brand</li>
+
+<li>Maintained National Broadband’s identity</li>
+
+<li>Built trust through clear co‑branding</li>
+
+<li>Converted users coming from email campaigns</li>
+
+<li>Worked flawlessly on mobile</li>
+
+<li>Allowed customers to reach a sales associate during or after business hours</li>
+
+ <p class="text-muted">This required careful balance — honoring each brand’s guidelines while still creating a unified, conversion‑focused experience.
+    </p>
+  </section>
+
+  <!-- WHAT I DID -->
+  <section class="mb-5">
+    <h2 class="section-title">What I Did</h2>
+      <p class="text-muted"><strong>UX, UI, Co‑Branding, and WordPress Build</strong></p>
+    <ul class="text-muted">
+   <li>Designed responsive co‑branded landing pages for United Van Lines and Mayflower</li>
+
+<li>Built the pages in WordPress for fast deployment and easy updates</li>
+
+<li>Created a shared component system that adapted to each brand’s visual identity</li>
+
+<li>Worked closely with the National Broadband content team to refine messaging</li>
+
+<li>Ensured clear information hierarchy and intuitive user flow</li>
+
+<li>Implemented prominent CTAs and contact options for both business hours and after‑hours support</li>
+
+<li>Used side‑by‑side logo placement and brand‑specific color palettes to establish trust</li>
+
+<li>Ensured accessibility and mobile‑first performance</li>
+    </ul>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="mb-5">
+    <h2 class="section-title">Results</h2>
+      <p class="text-muted"><strong>Clearer Communication, Stronger Trust, Higher Conversion</strong></p>
+    <ul class="text-muted">
+      <li>Two fully responsive landing pages aligned with three brands</li>
+    <li>Improved customer understanding of the partnership</li>
+    <li>Increased lead capture through optimized forms and CTAs</li>
+    <li>Consistent brand experience across email → landing page → sales flow</li>
+    <li>A scalable WordPress structure that can support future co‑branded pages></li>
+    </ul>
+  </section>
+
+  <!-- IMAGES -->
+  <section class="gallery mb-5">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <img src="images/unigroup/mayflower_con3thmb.jpg" class="full-image" alt="Mayflower on hours sales form concept">
+      </div>
+      <div class="col-12 col-lg-4">
+        <img src="images/unigroup/mayflower_concept2.png" class="full-image" alt="Mayflower off hours sales form concept">
+      </div>
+      <div class="col-12 col-lg-4">
+         <img src="images/unigroup/screencapture-nationalbroadband-mayflower-2022-05-08-20_52_05.png" class="full-image" alt="Mayflower Offical on hours page">
+      </div>
     </div>
-</section>
 
-        
-<section id="half-col-img" class="padding-default">
-    <div class="container">
-        <div class="row">
-            <div class="mobile-imgs col-12 col-lg-6">
-                <img class="img-responsive" src="/imgs/unigroup/unigroup_computermock.jpg" alt="national broadband and united van lines web page design" />
-            </div>
-            <div class="mobile-imgs col-12 col-lg-6">
-                <img class="img-responsive" src="/imgs/unigroup/unigroup_mobilemock.jpg" alt="united van lines landing page on mobile" />
-            </div>
-        </div>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <img src="images/unigroup/united_internet_offhours2.png" class="full-image" alt="Unigroup Van Lines on hours mid section call out concept">
+      </div>
+      <div class="col-12 col-lg-4">
+        <img src="images/unigroup/unitedvanlines_form.jpg" class="full-image" alt="Unigroup Van Lines off hours sales form concept">
+      </div>
+         <div class="col-12 col-lg-4">
+        <img src="images/unigroup/screencapture-nationalbroadband-united-van-lines-2022-05-07-13_02_33.png" class="full-image" alt="Van Lines Offical on hours page">
+      </div>
     </div>
-</section>
-
-
-<section class="padding-default">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6 summary-img">
-               
-                <img class="img-responsive" src="/imgs/unigroup/unigroup_fullpg.jpg" alt="National Broadband and United Van Lines Full Page job summary" />
-                
-            </div>
-            <div class="col-12 col-lg-6 summary-txt">
-                <h2>Web Page Design</h2>
-                <p>Audiences are channeled from an email source to landing pages built on National Broadband's 
-                    WordPress platform. These landing pages outline details to help find the best deal and 
-                    understand what National Broadband can do for them. Working with the National Broadband 
-                    content writing team, my role pertained to the responsive design of both landing pages. 
-                    These pages include clear and insightful information on the services offered by National 
-                    Broadband and lead-driven CTAs and contact forms.
-                    </p>
-                    <h3>Project Scope</h3>
-                    <ul>
-
-                        <li>Custom, Responsive Website Design</li>
- <li>User Experience Design</li>
-<li>Professional Website Copywriting</li>
-<li>Website Content Management System (CMS)</li>
-
-                    </ul>
-                  
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="padding-default">
-    <div class="container">
-        <div class="brand-row row">
-            <div class="col-12 col-lg-6 company-overview">
-                <h2>Building brand trust</h2>
-                <p>Co-branding is imperative to both companies. The user is acknowledged as a customer of either United
-                     Van Lines or Mayflower and then given straightforward guidance that National Broadband is the 
-                     company providing the service of finding internet and television deals for them. To achieve 
-                     co-branding, logos are side-by-side when delivering a message to the audience. Color scheme and 
-                     font usage are also appropriately implemented.
-                </p>
-            </div>
-            <div class="col-12 col-lg-6 summary-img">
-                <img class="img-responsive" src="/imgs/unigroup/mayflower_display.jpg" alt="National Broadband and United Van Lines Full Page job summary" />
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="project-highlights">
-    <div class="container center">
-        <div class="row">
-            <div class="col-12 ">
-                    <h2>Project Preliminary Concepts</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-  data-fancybox="gallery"
-  data-src="/imgs/unigroup/gallery/united_concept1.png" data-caption="The original concept focused on National Broadband content with the design elements closely related to United Van Lines. "/> 
-   <img class="img-responsive" src="/imgs/unigroup/gallery/unitedvanlines_con1thmb.jpg" />
-</a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/unigroup/gallery/united_concept2.png" data-caption="The second concept held more elements closer resembling National Broadband's website. The idea to have a contact form that would display during non hours of operation was consturcted. "/> 
-                 <img class="img-responsive" src="/imgs/unigroup/gallery/unitedvanlines_con2thmb.jpg" />
-              </a>
-         
-           </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/unigroup/gallery/united_concept3.png" data-caption="The third draft proved to have a more eye-catching appeal, and another call-to-action was added close to the footer. In the final, it was concluded a less complex layout would keep the user more focused on what was important."/> 
-                 <img class="img-responsive" src="/imgs/unigroup/gallery/unitedvanlines_con3thmb.jpg" />
-              </a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/unigroup/gallery/mayflower_concept1.png" data-caption="The first draft used elements from the Mayflower website."/> 
-                 <img class="img-responsive" src="/imgs/unigroup/gallery/mayflower_con1thmb.jpg" />
-              </a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/unigroup/gallery/mayflower_concept2.png" data-caption="In the second prelimenary the layout was more driven to look like National Broadband. A contact form was devised for off hours contacting."/> 
-                 <img class="img-responsive" src="/imgs/unigroup/gallery/mayflower_con2thmb.jpg" />
-              </a>
-            </div>
-            <div class="gallery-img col-12 col-lg-4">
-                <a
-                data-fancybox="gallery"
-                data-src="/imgs/unigroup/gallery/mayflower_concept3.png" data-caption="In the last draft, the notice to call National Broadband is directed in the header. This idea eventually led to the idea of a double logo. "/> 
-                 <img class="img-responsive" src="/imgs/unigroup/gallery/mayflower_con3thmb.jpg" />
-              </a>
-            </div>
-
-        </div>
-    
-    </div>
-</section>
+  </section>
+</div>
 
 <footer-component></footer-component>
 
-  <style>
-.brand-row{align-items: center;}
+<!-- Bootstrap 4 JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-.small-main{font-size:38px;}
-
-
-
-/*Visit Btn Action*/
-
-.img-responsive{display:block;
-width:100%;}
-
-
-/*Project Highlights Section */
-#project-highlights .row{margin:30px 0;}
-      .phero-txt{padding-top:30px;}
-      #project-hero h1 {text-align:left;}
-      #project-hero .below-title {color:#616060; font-size:21px;}
-      .project-hero .row{display:flex;}
-      .summary-txt{padding-left:60px;}
-      h3{margin-bottom:15px;}
-   .project-list ul li{    line-height: 2.5;
-    font-weight: 600;}
-    ::marker {color:#8C1C1C;}
-    h3, .h3 {
-    padding-top: 30px;
-    margin-bottom: 15px;
-    color: gray;
-   
-}
-
-#project-highlights{
-margin-top: 90px;
-padding-top:30px;
-padding-bottom:90px;
-color:#FFF;
-background-color:#8C1C1C;}
-
-#project-highlights h2{color:#fff;}
-
-.gallery-img{margin:15px 0;}
-
-/* Default page style */
-
-      .responsive-mockup{margin:0 auto;}
-
-      @media screen and (min-width:992px){
-    .company-overview {padding-right:60px;}
-}
-
-@media screen and (max-width:992px){
-    .ug-nb{font-size:35px;}
-        .responsive-mockup {
-    padding-top: 30px;}
-.mobile-imgs{margin:15px 0;}
-.summary-txt{padding-left:15px;
-padding-top:30px;}
-.summary-img{padding-top:30px;}
-}
-
-  </style> 
-  
-  
- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
- <script>
-   //  JavaScript will go here
- </script>
-
-<!-- Bootstrap 4 JS-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--End Bootstrap 4 JS-->
 </body>
 </html>
+
