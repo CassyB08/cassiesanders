@@ -5,7 +5,7 @@ class HeaderComponent extends HTMLElement {
     this.innerHTML = `
       <header class="global-header py-3">
         <div class="container d-flex align-items-center">
-          <a href="/index.html" class="brand text-decoration-none">
+          <a href="https://cassyb08.github.io/cassiesanders/" class="brand text-decoration-none">
             <div class="brand-logo">CS</div>
             <span class="brand-name">Cassie Sanders</span>
           </a>
