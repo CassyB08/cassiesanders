@@ -98,6 +98,8 @@
     padding: 0 20px;
   }
 
+  .work-text{ padding: 20px;}
+
   .work-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -105,11 +107,13 @@
     margin-top: 32px;
   }
 
+  .responsive-img{display:inline-block;
+                  width:100%;
+                  height:auto;}
   .work-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 20px;
     text-decoration: none;
     color: var(--text);
     transition: 0.2s ease;
@@ -175,8 +179,10 @@ html, body {
 
     <a href="lawson.html" class="work-card">
       <div class="work-img"><img class="responsive-img" alt="lawson-cover-photo" src="images/lawson_cover_photo.jpg"></div>
+      <div class="work-text">
       <div class="work-title">Lawson Screen & Digital Products</div>
       <div class="work-role">Web Design, Ecommerce, Digital Strategy</div>
+      </div>
     </a>
 
     <a href="vatrix.html" class="work-card">
