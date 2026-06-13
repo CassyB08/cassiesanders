@@ -8,9 +8,6 @@ header.global-header {
   padding: 24px 32px;
 }
 
-.btn-primary{background-color:#7a3b2f:
-border:1px solid #7a3b2f;}
-
 /* Brand container */
 .brand {
   display: flex;
@@ -55,6 +52,34 @@ a span.brand-name {
   font-size: 18px;
   font-weight: 600;
   color: var(--text);
+}
+
+
+/* --- BUTTONS --- */
+.case-nav .btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.case-nav .btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.case-nav .btn-primary:hover {
+  background-color: #5f2e24;
+  border-color: #5f2e24;
+}
+
+.case-nav .btn-outline-secondary {
+  color: var(--subtle);
+  border-color: var(--border);
+}
+
+.case-nav .btn-outline-secondary:hover {
+  background-color: var(--card-bg);
 }
 
 
