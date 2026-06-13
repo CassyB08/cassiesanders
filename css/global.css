@@ -8,6 +8,9 @@ header.global-header {
   padding: 24px 32px;
 }
 
+.btn-primary{background-color:#7a3b2f:
+border:1px solid #7a3b2f;}
+
 /* Brand container */
 .brand {
   display: flex;
