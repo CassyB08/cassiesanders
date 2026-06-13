@@ -1,12 +1,6 @@
 /* ============================
    GLOBAL HEADER (Bootstrap 4)
    ============================ */
-img.full-image {
-    display: block;
-    width: 100%;
-    max-width: 40px;
-}
-
 
 header.global-header {
   background: var(--bg);
