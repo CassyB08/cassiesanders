@@ -82,4 +82,24 @@ a span.brand-name {
   background-color: var(--card-bg);
 }
 
+/* === About Section === */
+.about-section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+
 
